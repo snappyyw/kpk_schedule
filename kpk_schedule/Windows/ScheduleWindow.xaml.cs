@@ -72,19 +72,28 @@ namespace kpk_schedule.Windows
         }
         private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            _teachers = int.Parse(Teachers.SelectedValue.ToString());
-            OnDataChanged();
+            if (Teachers.SelectedValue != null && !string.IsNullOrEmpty(Teachers.SelectedValue.ToString()))
+            {
+                _teachers = int.Parse(Teachers.SelectedValue.ToString());
+                OnDataChanged();
+            }
         }
 
         private void ComboBox_SelectionChanged1(object sender, SelectionChangedEventArgs e)
         {
-            _lesson = int.Parse(Lesson.SelectedValue.ToString());
-            OnDataChanged();
+            if (Lesson.SelectedValue != null && !string.IsNullOrEmpty(Lesson.SelectedValue.ToString()))
+            {
+                _lesson = int.Parse(Lesson.SelectedValue.ToString());
+                OnDataChanged();
+            }
         }
         private void ComboBox_SelectionChanged2(object sender, SelectionChangedEventArgs e)
         {
-            _groups = int.Parse(Groups.SelectedValue.ToString());
-            OnDataChanged();
+            if (Groups.SelectedValue != null && !string.IsNullOrEmpty(Groups.SelectedValue.ToString()))
+            {
+                _groups = int.Parse(Groups.SelectedValue.ToString());
+                OnDataChanged();
+            }
         }
         public ScheduleWindow()
         {

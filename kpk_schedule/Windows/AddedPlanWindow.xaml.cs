@@ -90,10 +90,15 @@ namespace kpk_schedule.Windows
         private bool isChecked()
         {
             StringBuilder error = new StringBuilder();
-            if (string.IsNullOrEmpty(Name.Text))
+            try
+            {
+                int.Parse(Name.Text);
+            }
+            catch
             {
                 error.AppendLine("Введите часы");
             }
+
             if (Name1.SelectedValue == null)
             {
                 error.AppendLine("Выберите преподователя");
