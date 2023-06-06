@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище DatabaseModelContainer" CdmEntityContainer="DatabaseEntities">
+    <EntitySetMapping Name="Cabinet">
+      <EntityTypeMapping TypeName="DatabaseModel.Cabinet">
+        <MappingFragment StoreEntitySet="Cabinet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Couples">
+      <EntityTypeMapping TypeName="DatabaseModel.Couples">
+        <MappingFragment StoreEntitySet="Couples">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Groups">
+      <EntityTypeMapping TypeName="DatabaseModel.Groups">
+        <MappingFragment StoreEntitySet="Groups">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Lesson">
+      <EntityTypeMapping TypeName="DatabaseModel.Lesson">
+        <MappingFragment StoreEntitySet="Lesson">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Schedule">
+      <EntityTypeMapping TypeName="DatabaseModel.Schedule">
+        <MappingFragment StoreEntitySet="Schedule">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="IdGroups" ColumnName="IdGroups" />
+          <ScalarProperty Name="IdSubject" ColumnName="IdSubject" />
+          <ScalarProperty Name="IdCouples" ColumnName="IdCouples" />
+          <ScalarProperty Name="IdCabinet" ColumnName="IdCabinet" />
+          <ScalarProperty Name="Data" ColumnName="Data" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Subject">
+      <EntityTypeMapping TypeName="DatabaseModel.Subject">
+        <MappingFragment StoreEntitySet="Subject">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="WorkTime" ColumnName="WorkTime" />
+          <ScalarProperty Name="IdLesson" ColumnName="IdLesson" />
+          <ScalarProperty Name="IdTeachers" ColumnName="IdTeachers" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Teachers">
+      <EntityTypeMapping TypeName="DatabaseModel.Teachers">
+        <MappingFragment StoreEntitySet="Teachers">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
